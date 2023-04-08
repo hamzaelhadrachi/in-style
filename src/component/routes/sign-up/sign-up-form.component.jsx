@@ -4,6 +4,7 @@ import FormInput from "../../form-input/form-input.component";
 import './sign-up-form.styles.scss';
 import Button from "../../button/button.component";
 
+
 const defaultFormFields = {
     displayName: '',
     email: '',
@@ -14,7 +15,7 @@ const defaultFormFields = {
 const SignUpForm = () => {
     const [formFields, setFormFields] = useState(defaultFormFields);
     const {displayName, email, password, confirmPassword} = formFields;
-    
+
     const handleSubmit = async (event) => {
         event.preventDefault();
         if(password !== confirmPassword){
@@ -59,24 +60,24 @@ const SignUpForm = () => {
                     type='text' 
                     required 
                     onChange={handleChange} 
-                    name='displayName' 
-                    value={displayName}
+                    name='email' 
+                    value={email}
                 />
                 <FormInput 
                     label='Password'
-                    type='text' 
+                    type='password' 
                     required 
                     onChange={handleChange} 
-                    name='displayName' 
-                    value={displayName}
+                    name='password' 
+                    value={password}
                 />
                 <FormInput 
                     label='Confirm Password'
-                    type='text' 
+                    type='password' 
                     required 
                     onChange={handleChange} 
-                    name='displayName' 
-                    value={displayName}
+                    name='confirmPassword' 
+                    value={confirmPassword}
                 />
                 <Button type='submit'>Sign up</Button>
             </form>
