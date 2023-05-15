@@ -9,7 +9,7 @@ import { signOutUser } from "../../../utils/firebase/firebase.utils";
 import {ReactComponent as CrwnLogo} from '../../../assets/crown.svg'
 
 import CartIcon from "../../cart-icon/cart-icon.component";
-import CartDropDown from "../../car-dropdown/cart-dropdown.component";
+import CartDropDown from "../../cart-dropdown/cart-dropdown.component";
 
 
 const Navigation = () => {
